@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>230</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>RecursoDigital
+--
+- titulo: String
+- fechaPublicacion: String
+- libroDigital: LibroDigital
+- videoEducativo: VideoEducativo
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>520</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>LibroDigital
+--
+- nombreAutor: String
+- cantPaginas: int
+- codigo: int
+--
++ libroDigital(): LibroDigital
++ getCantPaginas(): int
++ setCantPaginas(int): void
++ getCantPaginas():int
++ setCantPaginas(int): void
++ getCodigo(): int
++ setCodigo(int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>520</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>VideoEducativo
+--
+- duracion: double
+- resolucion: String
+- formato: String
+--
++ getDuracion(): double
++ setDuracion(double): void
++ getResolucion(): String
++ setDuracion(String): void
++ getFormato(): String
++ setFormato(String): void
++ hailgrasa
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>40</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Prestamo
+--
+- fecha: String
+- fechaDevolucion: String
+- estado: String
+- recursoDigital: RecursoDigital
+- 
+--
++ getFecha(): String
++ setFecha(String): void
++ getFechaDevol(): String
++ setFechaDevol(String):void
++ getEstado(): String
++ setEstado(String): void
++ getRecursoDigital(): RecursoDigital
++ setRecursoDigital(RecursoDigital): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>310</y>
+      <w>90</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>110</y>
+      <w>300</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*
+</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;20.0;280.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>310</y>
+      <w>80</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1
+</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>320</y>
+      <w>210</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Usuario
+--
+- tipo: int
+- numSocio: int
+- nombreCompleto: String
+- correo: String
+--
++ usuario(): Usuario
++ getTipo(): int
++ setTipo(int): void
++ getNumSocio(): int
++ setNumSocio(int): void
++ getCorreo(): String
++ setCorreo(String): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>220</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0...*
+m2=1
+</panel_attributes>
+    <additional_attributes>110.0;100.0;110.0;60.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

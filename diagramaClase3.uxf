@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>200</y>
+      <w>190</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Persona
+--
+- id: int
+- nombre: String
+- edad: int
+--
++ Persona ():Persona
++ getnombre(): String
++ setNombre(String): void
++ getId(): int
++ setId(int): void
++ getEdad(): int
++ setEdad(int) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>190</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Cuenta 
+--
+- id: long
+- cliente : Cliente
+- numeroCuenta: String
+--
++ Cuenta (long, Cliente, String) : Cuenta
++ getCliente() : Cliente
++ setCliente(Cliente) : void
++ getId() : long
++ setId(long) : void
++ getNumeroCuenta(): String
++ setNumeroCuenta(String) : void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>250</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>
+m1=1
+m2=1...*
+teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>490</y>
+      <w>280</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>MovimientoCuenta 
+--
+- id: long
+- cuenta: Cuenta
+- monto: double
+- ingreso: boolean
+--
++ MovimientoCuenta () : MovimientoCuenta
++ getCuenta() : Cuenta
++ setCuenta(Cuenta) : void
++ getId() : long
++ setId(long) : void
++ getMonto(): double
++ setMonto(double) : void
++ getIngreso(): boolean
++ setIngreso(boolean): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>370</y>
+      <w>110</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>
+m1=1
+m2=1...*
+teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+</diagram>
