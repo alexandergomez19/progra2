@@ -1,0 +1,46 @@
+package service;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.swing.JOptionPane;
+public class Menu {
+
+	public static void main(String[] args) {
+		int opcion = Integer.parseInt(JOptionPane.showInputDialog("********************** \n 1.Ejercicio1\n2.Ejercicio2\n3.Ejercicio3\n4.Ejercicio4\n5.Salir"));
+		switch (opcion) {
+		 case 1:
+			int numeroA = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer numero"));
+			
+			int numeroB = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+			int resultado1;
+			int resultado2;
+			
+			for(int i=1; i<)
+			
+			
+			break;
+		 case 2: 
+			 try{
+				 String dia = JOptionPane.showInputDialog("Ingrese el dia: ");
+				 String mes =JOptionPane.showInputDialog("Ingrese el dia: ");
+				 String anio = JOptionPane.showInputDialog("Ingrese el dia: ");
+				 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+				 String fecha = dia+"/"+mes+"/"+anio;
+				 Date fecha2 = sdf.parse(fecha);
+				 Date hoy = new Date();
+				 
+				 
+			 
+			 }catch(ParseException e) {
+				 JOptionPane.showMessageDialog(null, "error","ERROR FECHA",JOptionPane.ERROR_MESSAGE);
+			 }
+					 
+			 break;
+		 case 5:
+			 JOptionPane.showMessageDialog(null, "saliendo");
+			 break;
+		}
+	}
+
+}
